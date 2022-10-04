@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+html{
+    background-color: rgba(122, 191, 191, .5);
+}
+body{
+    width: 414px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    position: relative;
+}
+h1, h2, h3, nav a, menu li, footer{
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+}
+nav a, menu li, footer{
+    font-size: 20px;
+}
+p, dd, li, nav, input{
+    font-family: 'Montserrat, sans-serif';
+    font-size: 16px;
+}
+dt{
+    font-family: 'Montserrat, sans-serif';
+    font-size: 16px;
+    font-weight: bold;
+}
+header img{
+    width: 100%;
+}
+header{
+    padding-top: 180px;
+}
+header p{
+    margin: 10px;
+}
+main nav{
+    width: 414px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+}
+main form{
+    width:  414px;
+    position: absolute;
+    top: 140px;
+    display: inline;
+    padding: 0 40px;
+    transition: all .5s ease-in-out;
+}
+form input{
+    height: 45px;
+    width: 275px;
+    border-color: #eb5428;
+}
+form button{
+    cursor: pointer;
+    background-color: #eb5428;
+    border-style: none;
+    position: absolute;
+    top: 0;
+}
+form button svg{
+    stroke: #ffffff;
+}
+menu{
+    list-style: none;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+menu li{
+    display: inline;
+}
+menu button:hover{
+    background-color: #eb5428;
+    color: #ffffff;
+}
+menu button{
+    cursor: pointer;
+    display: inline-flex;
+    padding: 10px 15px;
+    position: relative;
+    user-select: none;
+    border-style: none;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: #eb5428;
+    background-color: #f2f2f2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+nav h2{
+    visibility: hidden;
+    height: 1px;
+    margin: 0;
+}
+main nav ul{
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+main nav li a{
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #eb5428;
+}
+main nav li a:hover{
+    background-color: #eb5428;
+    color: #ffffff;
+}
+li img{
+    display: none;
+}
+[href="#home"]{
+    position: absolute;
+    top: 0;
+    left: 96.5px;
+    padding: 21.5px 71px;
+    background-color: #eb5428;
+    transition: all .5s ease-in-out;
+}
+[href="#avatar"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20.5px 15px;
+    stroke: #eb5428;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    position: relative;
+    user-select: none;
+}
+nav input{
+    display: none;
+}
+nav input:checked ~ ul{
+    max-height: 500px;
+}
+#details dl{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+#details dt{
+    flex: 0 25%;
+}
+#details dd{
+    flex: 0 75%;
+    margin-left: auto;
+    text-align: left;
+}
+#ingredients ul{
+    padding-left: 25px;
+}
+#ingredients li{
+    padding: 10px;
+    list-style-type: square;
+}
+#directions ol{
+    padding-left: 25px;
+}
+#directions li{
+    padding: 10px;
+}
+#sides{
+    background-color: #7abfbf;
+}
+#sides div{
+    padding-bottom: 20px;
+    position: relative;
+}
+#sides div:hover{
+    background-color: goldenrod;
+}
+#sides img{
+    width: 30%;
+}
+#sides h3{
+    position: absolute;
+    top: 0;
+    left: 33%;
+}
+#sides dl{
+    display: inline;
+}
+#sides dt{
+    font-weight: 400;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+}
+#sides dd{
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 33%;
+}
+footer{
+    position: relative;
+}
+footer ul{
+    padding: 0;
+}
+footer li{
+    display: inline;
+}
+footer a{
+    cursor: pointer;
+    display: inline-flex;
+    padding: 10px 20px;
+    position: relative;
+    user-select: none;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    color: #eb5428;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+}
+footer img{
+    width: 50%;
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        width: 768px;
+    }
+    main nav{
+        width: 768px;
+        height: 210px;
+    }
+    main nav ul{
+        width: 768px;
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-height: fit-content;
+    }
+    main [href="#"]{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 80px;
+    }
+    main nav li:first-child{
+        flex: 0 0 100%;
+    }
+    main nav li:last-child{
+        flex: 0 0 100%;
+    }
+    main nav li{
+        flex: 1;
+    }
+    li img{
+        display: inline;
+        width: 100%;
+    }
+    [href="#home"]{
+        left: 0;
+        padding: 10px;
+        /*flex: 0 0 100%;*/
+    }
+    [href="#avatar"]{
+        padding: 10px;
+    }
+    label{
+        display: none;
+    }
+    main form{
+        z-index: 2;
+        top: 20px;
+        right: 0;
+    }
+    h1{
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    menu{
+        position: absolute;
+        width: 768px;
+        padding: 0;
+        display: inline-flex;
+    }
+    menu li{
+        flex: 0 0 25%;
+    }
+    menu button{
+        background-color: rgba(255, 255, 255, .5);
+        width: 100%;
+    }
+    #details dt{
+        flex: 0 49%;
+        text-align: right;
+    }
+    #details dd{
+        flex: 0 49%;
+    }
+    #ingredients{
+        margin: 0;
+        width: 25%;
+        float: left;
+    }
+    #directions{
+        margin: 0;
+        width: 75%;
+        float: right;
+    }
+    #directions ol{
+        padding-right: 40px;
+        line-height: 25px;
+    }
+    #sides{
+        clear: both;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sides h2{
+        flex: 0 0 100%;
+        margin: 10px;
+    }
+    #sides div{
+        flex: 0 0 50%;
+    }
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 40px;
+    }
+    footer nav{
+        flex: 0 0 60%;
+    }
+    footer div{
+        flex: 0 0 40%;
+    }
+}
+
+@media screen and (min-width:1280px){
+    body{
+        width: 1280px;
+    }
+    main nav{
+        width: 1280px;
+        height: 127px;
+    }
+    main nav ul{
+        width: 1280px;
+    }
+    main nav li:first-child{
+        flex: 1;
+    }
+    main nav li:last-child{
+        flex: 1;
+    }
+    [href="#home"]{
+        padding: 30px 40px;
+    }
+    [href="#avatar"]{
+        padding: 30px 30px;
+    }
+    main [href="#"]{
+        margin-top: 0;
+    }
+    li img{
+        width: 60%;
+    }
+    main form{
+        top: 160px;
+        width: 1280px;
+        padding: 0;
+        left: 38%;
+    }
+    header{
+        position: relative;
+        height: 869px;
+    }
+    h1{
+        text-align: center;
+        padding-left: 0;
+    }
+    menu{
+        flex-direction: column;
+        width: 116px;
+        height: 764px;
+        border: 2px solid #eb5428;
+        background-color: #ffffff;
+    }
+    menu li{
+        flex: 0 0 15%;
+    }
+    menu button{
+        background-color: #ffffff;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    header img{
+        width: 40%;
+        position: absolute;
+        left: 120px;
+    }
+    p{
+        position: absolute;
+        right: 0;
+        width: 630px;
+        height: 748px;
+        line-height: 40px;
+    }
+    #details{
+        background-color: #0d0d0d;
+        color: #7abfbf;
+    }
+    #details dl{
+        flex-direction: column;
+        height: 50px;
+    }
+    #details dt{
+        flex: 1 1 20px;
+        text-align:unset;
+        margin: 0 auto;
+    }
+    #details dd{
+        flex: 1 1 20px;
+        text-align: unset;
+        margin: 0 auto;
+    }
+    #sides div{
+        flex: 1;
+        padding-bottom: 120px;
+    }
+    #sides h3{
+        top: 65%;
+        left: 10%;
+    }
+    #sides dt{
+        top: 80%;
+        left: 10%;
+    }
+    #sides dd{
+        top: 90%;
+        left: 10%;
+    }
+    #sides img{
+        width: 80%;
+        padding-left: 30px;
+    }
+    footer{
+        justify-content: space-between;
+    }
+    footer nav{
+        flex: 0 0 40%;
+    }
+    footer div{
+        flex: 0 0 30%;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}
